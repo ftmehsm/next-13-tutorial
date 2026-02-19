@@ -1,12 +1,16 @@
 # next13
 
-This repository contains the **Car Shopping** Next.js 13 app.
+This repository contains Next.js 13 projects.
 
-## Project location
+## Projects
 
-The Next.js 13 application lives in the **`car-shopping`** folder.
+| Project        | Description                    |
+| -------------- | ------------------------------ |
+| [car-shopping](./car-shopping) | Car Shopping Next.js 13 app    |
 
 ## Getting started
+
+From the repo root, go into a project folder (e.g. [car-shopping](./car-shopping)) and run:
 
 ```bash
 cd car-shopping
@@ -16,7 +20,7 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) to view the app.
 
-## Scripts (from `car-shopping`)
+## Scripts (in each project folder)
 
 | Command      | Description        |
 | ------------ | ------------------ |
