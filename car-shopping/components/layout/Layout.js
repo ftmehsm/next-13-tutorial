@@ -6,7 +6,7 @@ import { useRouter } from "next/router";
 export default function Layout({ children }) {
   const router = useRouter();
   const backHandler = () => {
-    if (router.pathname === "/cars") {
+    if (router.pathname === "/cars" || router.pathname === "/cars/category/[category]") {
       router.push("/");
     } else {
       router.push("/cars");

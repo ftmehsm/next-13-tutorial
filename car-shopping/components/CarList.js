@@ -3,10 +3,11 @@ import carsData from "@/data/carsData";
 import CarCard from "@/components/CarCard";
 import styles from "./CarList.module.css";
 
-function CarList() {
+function CarList({ cars }) {
+  const list = cars ?? carsData;
   return (
     <div className={styles.carListContainer}>
-      {carsData.map((car) => (
+      {list.map((car) => (
         <CarCard key={car.id} carData={car} />
       ))}
     </div>

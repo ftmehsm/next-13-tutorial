@@ -156,5 +156,7 @@ const carsData = [
       category: "sedan",
     },
   ];
-  
-  export default carsData;
+
+export const categories = [...new Set(carsData.map((c) => c.category))];
+
+export default carsData;
