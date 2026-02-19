@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #d20c08;
+  color: #fff;
+  width: 100%;
+  font-size: 1.25rem;
+}
+
+.header a {
+  color: inherit;
+  font-weight: 600;
+}
+
+.footer {
+  background-color: rgb(217, 217, 217);
+  text-align: center;
+  color: grey;
+  padding: 10px 0;
+  margin-top: 30px;
+}
+
+.container {
+  min-height: 60vh;
+  padding: 10px;
+}
+
+@media (max-width: 600px) {
+  .header {
+    font-size: 1rem;
+  }
+}

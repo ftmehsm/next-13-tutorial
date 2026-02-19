@@ -1,0 +1,13 @@
+.home {
+  padding: 20px;
+}
+
+.title {
+  font-size: 1.75rem;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #555;
+  font-size: 1rem;
+}
