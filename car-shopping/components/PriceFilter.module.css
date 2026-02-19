@@ -1,0 +1,41 @@
+.filterSection {
+  margin: 24px 0 16px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+}
+
+.filterTitle {
+  font-size: 1rem;
+  margin: 0 0 12px;
+  font-weight: 600;
+}
+
+.priceFilter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: flex-end;
+}
+
+.filterLabel {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.filterInput {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  min-width: 120px;
+}
+
+.filterInput:focus {
+  outline: none;
+  border-color: #d20c08;
+  box-shadow: 0 0 0 2px rgba(210, 12, 8, 0.15);
+}
