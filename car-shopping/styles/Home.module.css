@@ -1,0 +1,8 @@
+.seeAllCarsButton {
+    background-color: #d20c08;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}

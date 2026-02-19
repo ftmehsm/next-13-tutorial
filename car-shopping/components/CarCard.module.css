@@ -1,0 +1,43 @@
+.cardContainer {
+    width: 100%;
+    min-width: 0;
+    max-height: 80vh;
+    border-radius: 10px;
+    border: 1px solid #c9c7c7;
+    padding: 10px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.cardTitle {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #000000;
+}
+
+.cardYear {
+    font-size: 1rem;
+    color: #666666;
+}
+.cardImage {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.cardFooter {
+    display: flex;
+    justify-content: space-between;
+}
+.price {
+    font-weight: bold;
+    color: #fffdfd;
+    background-color: #d20c08;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
