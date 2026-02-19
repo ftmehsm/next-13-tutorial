@@ -1,9 +1,10 @@
 import React from "react";
 import styles from "./CarCard.module.css";
-import Image from "next/image";
+import Link from "next/link";
 
 function CarCard({ carData }) {
   const {
+    id,
     name,
     model,
     year,
@@ -15,7 +16,7 @@ function CarCard({ carData }) {
     category,
   } = carData;
   return (
-    <div className={styles.cardContainer}>
+    <Link href={`/cars/${id}`} className={styles.cardContainer}>
       <img src={image} alt={name} className={styles.cardImage} />
       <span className={styles.cardTitle}>
         {name}-{model}
@@ -27,7 +28,7 @@ function CarCard({ carData }) {
         <span className={styles.price}>${price}</span>
         <span>{location}</span>
       </div>
-    </div>
+    </Link>
   );
 }
 

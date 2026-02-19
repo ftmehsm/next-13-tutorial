@@ -1,11 +1,21 @@
 import React from "react";
 import styles from "./Layout.module.css";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 export default function Layout({ children }) {
+  const router = useRouter();
+  const backHandler = () => {
+    if (router.pathname === "/cars") {
+      router.push("/");
+    } else {
+      router.push("/cars");
+    }
+  };
   return (
     <>
       <header className={styles.header}>
+        <button type="button" className={styles.backButton} onClick={backHandler}>Back</button>
         <Link href="/">car shopping project</Link>
       </header>
       <div className={styles.container}>{children}</div>
